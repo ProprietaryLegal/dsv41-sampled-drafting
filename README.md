@@ -1,5 +1,7 @@
 # DSV41 sampled drafting (PP4): sampled DSpark drafts with exact target-side acceptance
 
+> **DGX sPLIce component.** Part of [DGX sPLIce](https://github.com/ProprietaryLegal/DGX-sPLIce-DeepSeek-V4.1-Flash-2xDGX-Spark-2xRTX3090-drafter-x86-offload): DeepSeek-V4.1-Flash on 2x DGX Spark + 2x RTX 3090 drafter, x86 offload. That repository carries the current production source, the measurements with raw JSON, and the install guide.
+
 DeepSeek-V4.1-Flash's DSpark drafter normally proposes greedy drafts. Its acceptance law, sum of min(p_target, p_draft),
 favours drafts *sampled* from the drafter's own distribution. PP4 moves the remote DSpark drafter (on two NVLinked RTX 3090s)
 to sampled drafts and carries the draft probabilities to the target's verifier, so the output distribution stays exactly
